@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+
+        <Button
+            android:id="@+id/operationButtonPlus"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/numberButton4"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@id/numberButton3"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/fontColorOperations"
+            android:backgroundTint="@color/bgColorRightOperations"
+            android:text="+"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/numberButton2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/numberButton4"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@id/numberButton1"
+            android:fontFamily="sans-serif-light"
+            android:text="2"
+            android:textColor="@color/fontColorNumbers"
+            android:backgroundTint="@color/bgColorNumbers"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/operationButtonAC"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@+id/result"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="75dp"
+            android:fontFamily="sans-serif-light"
+            android:text="AC"
+            android:textColor="@color/fontColorOperations"
+            android:backgroundTint="@color/bgColorLeftOperations"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/operationButtonDivision"
+            android:textColor="@color/fontColorOperations"
+            android:backgroundTint="@color/bgColorRightOperations"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/result"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="75sp"
+            android:layout_toEndOf="@id/operationButtonPercent"
+            android:fontFamily="sans-serif-light"
+            android:text="/"
+            android:textSize="32sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/operationButtonPercent"
+            android:textColor="@color/fontColorOperations"
+            android:backgroundTint="@color/bgColorLeftOperations"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/result"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="75dp"
+            android:layout_toEndOf="@id/operationButtonPlusOrMinus"
+            android:fontFamily="sans-serif-light"
+            android:text="%"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/operationButtonPlusOrMinus"
+            android:textColor="@color/fontColorOperations"
+            android:backgroundTint="@color/bgColorLeftOperations"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/result"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="75dp"
+            android:layout_toEndOf="@+id/operationButtonAC"
+            android:fontFamily="sans-serif-light"
+            android:text="+/-"
+            android:textSize="20sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/numberButton7"
+            android:textColor="@color/fontColorNumbers"
+            android:backgroundTint="@color/bgColorNumbers"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/operationButtonAC"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="15sp"
+            android:fontFamily="sans-serif-light"
+            android:text="7"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/numberButton9"
+            android:textColor="@color/fontColorNumbers"
+            android:backgroundTint="@color/bgColorNumbers"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/operationButtonAC"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@id/numberButton8"
+            android:fontFamily="sans-serif-light"
+            android:text="9"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/numberButton6"
+            android:textColor="@color/fontColorNumbers"
+            android:backgroundTint="@color/bgColorNumbers"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/numberButton7"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@id/numberButton5"
+            android:fontFamily="sans-serif-light"
+            android:text="6"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/operationButtonMultiplication"
+            android:textColor="@color/fontColorOperations"
+            android:backgroundTint="@color/bgColorRightOperations"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/operationButtonAC"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@id/numberButton9"
+            android:fontFamily="sans-serif-light"
+            android:text="*"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/numberButton5"
+            android:textColor="@color/fontColorNumbers"
+            android:backgroundTint="@color/bgColorNumbers"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/numberButton7"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@id/numberButton4"
+            android:fontFamily="sans-serif-light"
+            android:text="5"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/numberButton8"
+            android:textColor="@color/fontColorNumbers"
+            android:backgroundTint="@color/bgColorNumbers"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/operationButtonPlusOrMinus"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@id/numberButton7"
+            android:fontFamily="sans-serif-light"
+            android:text="8"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/numberButton1"
+            android:textColor="@color/fontColorNumbers"
+            android:backgroundTint="@color/bgColorNumbers"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/numberButton4"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:fontFamily="sans-serif-light"
+            android:text="1"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/operationButtonMinus"
+            android:textColor="@color/fontColorOperations"
+            android:backgroundTint="@color/bgColorRightOperations"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/numberButton7"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@id/numberButton6"
+            android:fontFamily="sans-serif-light"
+            android:text="-"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/numberButton3"
+            android:textColor="@color/fontColorNumbers"
+            android:backgroundTint="@color/bgColorNumbers"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/numberButton4"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@id/numberButton2"
+            android:fontFamily="sans-serif-light"
+            android:text="3"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/numberButton4"
+            android:textColor="@color/fontColorNumbers"
+            android:backgroundTint="@color/bgColorNumbers"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/numberButton7"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:fontFamily="sans-serif-light"
+            android:text="4"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/operationButtonEquals"
+            android:textColor="@color/fontColorOperations"
+            android:backgroundTint="@color/bgColorRightOperations"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/numberButton1"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@id/numberButtonComa"
+            android:fontFamily="sans-serif-light"
+            android:text="="
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/numberButton0"
+            android:textColor="@color/fontColorNumbers"
+            android:backgroundTint="@color/bgColorNumbers"
+            android:layout_width="175dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/numberButton1"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="15sp"
+            android:fontFamily="sans-serif-light"
+            android:text="0"
+            android:textAlignment="viewStart"
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/numberButtonComa"
+            android:textColor="@color/fontColorNumbers"
+            android:backgroundTint="@color/bgColorNumbers"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/numberButton1"
+            android:layout_marginStart="25sp"
+            android:layout_marginTop="15sp"
+            android:layout_toEndOf="@id/numberButton0"
+            android:fontFamily="sans-serif-light"
+            android:text=","
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100sp"
+            android:fontFamily="sans-serif-light"
+            android:text="10000"
+            android:textAlignment="textEnd"
+            android:textSize="74sp"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
